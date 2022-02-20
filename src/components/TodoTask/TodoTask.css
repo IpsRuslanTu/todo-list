@@ -1,0 +1,27 @@
+.todoTask {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.completed {
+  background-color: greenyellow;
+}
+
+.todoTask__title {
+  flex: 1 1 auto;
+  line-height: 1.5;
+}
+
+.todoTask__button {
+  background: none;
+  border: none;
+}
+
+.unvisible {
+  display: none;
+}

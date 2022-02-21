@@ -15,12 +15,12 @@ const TodoTask = ({ todo, deleteTask, changeTaskStatus, visible }: ITodoTask) =>
 
   return (
     <div className={`todoTask ${isCompleted} ${isVisible}`}>
-      <p
+      <span
         className='todoTask__title'
         onClick={() => changeTaskStatus(todo.todoId)}
       >
         {todo.todoName}
-      </p>
+      </span>
       <button
         className='todoTask__button'
         onClick={() => deleteTask(todo.todoId)}

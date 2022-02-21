@@ -1,21 +1,23 @@
 .todoTask {
+  flex: 0 1 47%;
   display: flex;
   justify-content: space-between;
-  height: 30px;
-  background-color: rgb(173, 124, 124);
+  align-items: center;
+  height: 40px;
+  background-color: rgb(153, 144, 144);
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 0 10px;
+  cursor: default;
 } 
 
 .completed {
-  background-color: greenyellow;
+  background-color: rgb(90, 211, 54);
   border: none;
 }
 
 .todoTask__title {
   flex: 1 1 auto;
-  line-height: 1.6;
 }
 
 .todoTask__button {

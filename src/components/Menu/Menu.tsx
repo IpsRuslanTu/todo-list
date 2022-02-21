@@ -12,23 +12,27 @@ interface IMenu {
 const Menu = (props: IMenu) => {
   return (
     <div className='menu'>
-      <div>
+      <div className="input-group input-group-size">
         <input
-          className='menu__input'
           type="text"
-          placeholder='Введите задание'
+          className="form-control"
           value={props.task}
           maxLength={20}
           onChange={props.handleChange}
+          placeholder='Введите задание'
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
         />
-        <button
-          className='menu__button'
-          onClick={props.addTask}
-        >
-          Добавить
-        </button>
+        <div className="input-group-append">
+          <button
+            className="btn btn-outline-secondary"
+            type="button"
+            onClick={props.addTask}
+          >Добавить
+          </button>
+        </div>
       </div>
-      <select className='menu__select' name="select" id="select" onChange={props.getSelectValue}>
+      <select className="custom-select select-size" name="select" id="select" onChange={props.getSelectValue}>
         {
           selectOptions.map(elem =>
             <option key={elem.value} value={elem.value}>

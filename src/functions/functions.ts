@@ -4,18 +4,16 @@ export const countAllTodos = (arr: ITodo[]): number => arr.length
 
 export const countCompletedTodos = (arr: ITodo[]): number => {
   let numComletedTodos = 0;
-  arr.map(item => {
+  arr.forEach(item => {
     if (item.todoStatus === true) ++numComletedTodos
-    return item
   })
   return numComletedTodos
 }
 
 export const countUncompletedTodos = (arr: ITodo[]): number => {
   let numUncomletedTodos = 0;
-  arr.map(item => {
+  arr.forEach(item => {
     if (item.todoStatus === false) ++numUncomletedTodos
-    return item
   })
   return numUncomletedTodos
 }
@@ -23,13 +21,9 @@ export const countUncompletedTodos = (arr: ITodo[]): number => {
 export const visibilityTodos = (printTodos: string, status: boolean): boolean => {
   switch (printTodos) {
     case 'completed':
-      if (status) {
-        return true
-      } else return false
+      return status
     case 'uncompleted':
-      if (status) {
-        return false
-      } else return true
+      return !status
     default: return true
   }
 }

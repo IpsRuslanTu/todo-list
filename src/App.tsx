@@ -5,12 +5,13 @@ import { v4 as uuidv1 } from 'uuid'
 import Header from './components/Header/Header'
 import Menu from './components/Menu/Menu'
 import TodoList from './components/TodoList/TodoList'
+import { optionCase } from './constants/constats'
 
 const App = () => {
 
   const [task, setTask] = useState<string>("")
   const [todoList, setTodoList] = useState<ITodo[]>([])
-  const [printTypeTodos, setPrintTypesTodos] = useState<string>('all')
+  const [printTypeTodos, setPrintTypesTodos] = useState<string>(optionCase.SHOW_ALL)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     setTask(e.target.value)

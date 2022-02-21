@@ -1,5 +1,5 @@
 import React from 'react'
-import { visibilityTodos } from '../../functions/todoListFunctions'
+import { visibilityTodos } from '../../functions/functions'
 import { ITodo } from '../../interfaces/interfaces'
 import TodoTask from '../TodoTask/TodoTask'
 import './TodoList.css'

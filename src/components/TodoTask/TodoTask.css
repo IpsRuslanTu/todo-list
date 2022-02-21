@@ -2,19 +2,20 @@
   display: flex;
   justify-content: space-between;
   height: 30px;
-  border: 1px solid black;
+  background-color: rgb(173, 124, 124);
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 0 10px;
-}
+} 
 
 .completed {
   background-color: greenyellow;
+  border: none;
 }
 
 .todoTask__title {
   flex: 1 1 auto;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .todoTask__button {

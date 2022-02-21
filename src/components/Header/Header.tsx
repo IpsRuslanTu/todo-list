@@ -2,7 +2,7 @@ import React from 'react'
 import {
   countAllTodos, countCompletedTodos,
   countUncompletedTodos
-} from '../../functions/headerFunctions'
+} from '../../functions/functions'
 import { ITodo } from '../../interfaces/interfaces'
 import './Header.css'
 
